@@ -1,0 +1,52 @@
+// =============================================
+// Tasks
+// =============================================
+
+// Style the list of tasks
+.tasks-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 1rem;
+
+  @include sm {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @include lg {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  @include xl {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+// Style individual task, border, content
+.task-item {
+  transform: rotate(-3deg);
+  transition: 0.15s ease;
+
+  &:hover {
+    transform: rotate(0deg);
+    transition: 0.15s ease;
+  }
+}
+
+// Style the list of filters on SidebarNav
+.sidebar-filter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .sidebar-filter-item {
+    .sidebar-filter-item-title {
+      color: var(--bs-light);
+
+      &:hover {
+        color: var(--bs-secondary);
+        transition: 0.15s ease;
+      }
+    }
+  }
+}

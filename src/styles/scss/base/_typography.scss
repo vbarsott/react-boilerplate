@@ -1,0 +1,68 @@
+// =============================================
+// TYPOGRAPHY
+// =============================================
+
+// =============================================
+// Font family
+// =============================================
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$font-default: 'Poppins', sans-serif;
+
+.font-default {
+  font-family: $font-default;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+$font_styled: 'Ranchers', cursive;
+
+.font-styled {
+  font-family: $font-styled;
+}
+
+// Replace Bootstrap base styles
+$font-family-base: 'Poppins', sans-serif;
+$link-decoration: none;
+
+// =============================================
+// Font size
+// =============================================
+// Bootstrap font-sizes
+$font-size-base: 1rem;
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+$font-size-xs: $font-size-base * 0.5;
+$font-size-sm: $font-size-base * 0.875;
+$font-size-lg: $font-size-base * 3;
+$font-size-xl: $font-size-base * 5;
+
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+  xs: $font-size-xs,
+  sm: $font-size-sm,
+  lg: $font-size-lg,
+  xl: $font-size-xl,
+);
+
+// =============================================
+// Letter spacing
+// =============================================
+$letter_spacing: (
+  'sm': 1.2px,
+  'md': 1.4px,
+  'lg': 1.6px,
+);
+
+@each $key, $val in $letter_spacing {
+  .ls-#{$key} {
+    letter-spacing: $val;
+  }
+}

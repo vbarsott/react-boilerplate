@@ -1,0 +1,134 @@
+// =============================================
+// COLORS
+// =============================================
+
+// Bootstrap customized colors
+$blue: #0d6efd;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #d63384;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #198754;
+$teal: #20c997;
+$cyan: #0dcaf0;
+
+$white: #fff;
+$gray-100: #fbf8f2;
+$gray-200: #fcfdfe;
+$gray-300: #e9ebec;
+$gray-400: #e3e4ea;
+$gray-500: #9e9e9e;
+$gray-600: #757575;
+$gray-700: #5f5f5f;
+$gray-800: #424242;
+$gray-900: #1d1d1d;
+$black: #000;
+
+// Custom colors
+$light-blue: #a8dee2;
+$dark-blue: #2ab3c0;
+$light-red: #eb9291;
+$dark-red: #ea605e;
+$light-yellow: #f8e0b1;
+$dark-yellow: #f9bc73;
+$light-green: #bad5ca;
+$dark-green: #80b895;
+
+$primary: $dark-red;
+$secondary: $dark-blue;
+$tertiary: $dark-yellow;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-800;
+
+// Maps
+$colors: (
+  'blue': $blue,
+  'indigo': $indigo,
+  'purple': $purple,
+  'pink': $pink,
+  'red': $red,
+  'orange': $orange,
+  'yellow': $yellow,
+  'green': $green,
+  'teal': $teal,
+  'cyan': $cyan,
+  'white': $white,
+  'gray': $gray-600,
+  'gray-dark': $gray-800,
+
+  'light-blue': $light-blue,
+  'dark-blue': $dark-blue,
+  'light-red': $light-red,
+  'dark-red': $dark-red,
+  'light-yellow': $light-yellow,
+  'dark-yellow': $dark-yellow,
+  'light-green': $light-green,
+  'dark-green': $dark-green,
+);
+
+$gray-colors: (
+  'gray-100': $gray-100,
+  'gray-200': $gray-200,
+  'gray-300': $gray-300,
+  'gray-400': $gray-400,
+  'gray-500': $gray-500,
+  'gray-600': $gray-600,
+  'gray-700': $gray-700,
+  'gray-800': $gray-800,
+  'gray-900': $gray-900,
+);
+
+$theme-colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'tertiary': $tertiary,
+  'success': $success,
+  'info': $info,
+  'warning': $warning,
+  'danger': $danger,
+  'light': $light,
+  'dark': $dark,
+);
+
+@each $key, $val in $colors {
+  .text-#{$key} {
+    color: $val;
+  }
+  .bg-#{$key} {
+    background-color: $val;
+  }
+}
+
+@each $key, $val in $gray-colors {
+  .text-#{$key} {
+    color: $val;
+  }
+  .bg-#{$key} {
+    background-color: $val;
+  }
+}
+
+$categories-colors: (
+  'light-blue': $light-blue,
+  'dark-blue': $dark-blue,
+  'light-red': $light-red,
+  'dark-red': $dark-red,
+  'light-yellow': $light-yellow,
+  'dark-yellow': $dark-yellow,
+  'light-green': $light-green,
+  'dark-green': $dark-green,
+  'purple': $purple,
+  'gray': $gray-700,
+);
+
+@each $key, $val in $categories-colors {
+  .#{$key} {
+    color: $val;
+  }
+}

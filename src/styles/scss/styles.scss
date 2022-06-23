@@ -1,0 +1,31 @@
+// =============================================
+// STYLES - Index
+// =============================================
+
+// Base styles
+@import './base/variables';
+@import './base/colors';
+@import './base/global';
+@import './base/typography';
+
+// Utilities
+@import './utilities/functions';
+@import './utilities/mixins';
+@import './utilities/responsive';
+@import './utilities/custom-utilities';
+
+// Components
+@import './components/accordion';
+@import './components/borders';
+@import './components/forms';
+@import './components/icons';
+@import './components/links';
+@import './components/popup';
+
+// Template parts
+@import './template-parts/app';
+@import './template-parts/header';
+@import './template-parts/footer';
+
+// Bootstrap
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
